@@ -1,0 +1,150 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  /* Секція "Unsere Arbeiten" */
+  #arbeiten {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 600px;
+  }
+  
+  #arbeiten h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  #arbeiten ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  #arbeiten li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  /* Ось тут додаємо стилі для слайдера */
+.slider {
+    width: 100%;
+    max-width: 800px; /* Обмежуємо ширину слайдера */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    height: 400px; /* Встановлюємо висоту */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  button.prev {
+    left: 10px;
+  }
+  
+  button.next {
+    right: 10px;
+  }
+  
+  button.prev:hover, button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Секція відгуків */
+  #reviews {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #reviews h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  #reviewForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #reviewForm input, #reviewForm textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  #reviewForm button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #reviewForm button:hover {
+    background-color: #45a049;
+  }
+  
+  #reviewsList {
+    margin-top: 1rem;
+    text-align: left;
+  }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+  
